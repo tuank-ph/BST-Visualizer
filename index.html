@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Search Tree Visualization</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="treeCanvas" width="0" height="0"></canvas>
+    <div id="ui">
+      <div class="controls">
+        <div id="generateTree">
+          <button id="generateRandomTreeBtn">Generate tree</button>
+          <p>Nodes:</p>
+          <input type="number" id="randomCount" value="10"/>
+        </div>
+        <div>
+          <p>Target node:</p>
+          <input type="number" id="nodeValue"/>
+        </div>
+        <div>
+          <button id="insertBtn">Insert</button>
+          <button id="deleteBtn">Delete</button>
+          <button id="findBtn">Find</button>
+        </div>
+      </div>
+      <div id="codeDiv">
+        <div class="cpp-code">
+          <pre id="cppCodeContainer"></pre>
+        </div>
+        <div id="stepsContainer" class="steps-container"></div>
+      </div>
+    </div>
+
+<!--      <div class="main-content">-->
+<!--        <div class="visualizer">-->
+<!--          <div class="controls">-->
+<!--            <input type="number" id="nodeValue" placeholder="Enter node value" />-->
+<!--            <button id="insertBtn">Insert Node</button>-->
+<!--            <button id="deleteBtn">Delete Node</button>-->
+<!--            <button id="findBtn">Find Node</button>-->
+<!--            <br />-->
+<!--            <input type="number" id="randomCount" placeholder="Enter node count" />-->
+<!--            <button id="generateRandomTreeBtn">Create Random Tree</button>-->
+<!--          </div>-->
+
+<!--          <div id="stepsContainer" class="steps-container"></div>-->
+
+<!--          <div class="canvas-container">-->
+<!--              -->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="cpp-code">-->
+<!--        <h2>C++ Code</h2>-->
+<!--        <pre id="cppCodeContainer"></pre>-->
+<!--      </div>-->
+
+    <script src="bstVisualizer.js"></script>
+  </body>
+</html>
